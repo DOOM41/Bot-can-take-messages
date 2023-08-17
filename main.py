@@ -10,7 +10,7 @@ dp = Dispatcher(bot=bot)
 async def start_mess(message: types.Message):
     await message.answer(
         "Здавствуй я бот который может принимать сообщения с другого сервиса\n\
-            Для отправки сообщении пропиши команду /set_code {code} и отправь код который видишь на главной транице сайта"
+Для отправки сообщении пропиши команду /set_code {code} и отправь код который видишь на главной транице сайта"
     )
     
 @dp.message_handler(commands='set_code')
